@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand editable" data-key="brand">Your Name</div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="actions">
+          <button id="toggleEdit" class="btn btn-secondary">Edit Content</button>
+          <button id="resetData" class="btn btn-primary">Reset</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow editable" data-key="eyebrow">Creative Developer</p>
+            <h1 class="editable" data-key="heroTitle">I design and build digital experiences.</h1>
+            <p class="editable" data-key="heroText">
+              I’m a passionate designer and developer focused on creating clean, modern,
+              user-friendly websites and products that help brands stand out.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Hire Me</a>
+            </div>
+            <ul class="mini-stats">
+              <li><strong class="editable" data-key="stat1Value">3+</strong><span class="editable" data-key="stat1Label">Years Experience</span></li>
+              <li><strong class="editable" data-key="stat2Value">12</strong><span class="editable" data-key="stat2Label">Projects Completed</span></li>
+              <li><strong class="editable" data-key="stat3Value">5</strong><span class="editable" data-key="stat3Label">Happy Clients</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="profile-box">
+              <div class="profile-image editable" data-key="profileText">YN</div>
+              <div>
+                <p class="label">Available for work</p>
+                <h3 class="editable" data-key="profileName">Your Name</h3>
+              </div>
+            </div>
+            <div class="card-stack">
+              <div class="stack-item">
+                <span>Location</span>
+                <strong class="editable" data-key="location">Your City</strong>
+              </div>
+              <div class="stack-item">
+                <span>Email</span>
+                <strong class="editable" data-key="email">hello@yourdomain.com</strong>
+              </div>
+              <div class="stack-item">
+                <span>Focus</span>
+                <strong class="editable" data-key="focus">Web Design • Development</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-column">
+          <div>
+            <p class="section-tag">About</p>
+            <h2 class="editable" data-key="aboutTitle">I build thoughtful digital experiences.</h2>
+          </div>
+          <div class="editable" data-key="aboutText">
+            I help businesses and individuals turn ideas into polished websites and digital products.
+            My work blends strategy, design, and development to create experiences that are visually
+            appealing, easy to use, and built to grow with your goals.
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section muted">
+        <div class="container">
+          <p class="section-tag">Skills</p>
+          <h2 class="editable" data-key="skillsTitle">Tools and strengths</h2>
+          <div class="skills-grid">
+            <div class="skill-card editable" data-key="skill1">UI/UX Design</div>
+            <div class="skill-card editable" data-key="skill2">Web Development</div>
+            <div class="skill-card editable" data-key="skill3">Brand Strategy</div>
+            <div class="skill-card editable" data-key="skill4">Responsive Design</div>
+            <div class="skill-card editable" data-key="skill5">Content Design</div>
+            <div class="skill-card editable" data-key="skill6">Project Planning</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-tag">Projects</p>
+          <h2 class="editable" data-key="projectsTitle">Selected work</h2>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-visual editable" data-key="project1Visual">01</div>
+              <div class="project-body">
+                <h3 class="editable" data-key="project1Title">Project One</h3>
+                <p class="editable" data-key="project1Text">
+                  A modern business website designed to improve brand visibility and drive more leads.
+                </p>
+                <span class="editable" data-key="project1Tag">Branding • Web Design</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual editable" data-key="project2Visual">02</div>
+              <div class="project-body">
+                <h3 class="editable" data-key="project2Title">Project Two</h3>
+                <p class="editable" data-key="project2Text">
+                  A clean portfolio experience created to highlight services, achievements, and client work.
+                </p>
+                <span class="editable" data-key="project2Tag">Portfolio • UX</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual editable" data-key="project3Visual">03</div>
+              <div class="project-body">
+                <h3 class="editable" data-key="project3Title">Project Three</h3>
+                <p class="editable" data-key="project3Text">
+                  A user-centered landing page focused on conversion, clarity, and strong visual storytelling.
+                </p>
+                <span class="editable" data-key="project3Tag">Landing Page • Strategy</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section accent">
+        <div class="container quote-box">
+          <p class="section-tag">Approach</p>
+          <blockquote class="editable" data-key="quoteText">
+            “Great work happens when design is clear, strategy is focused, and the user experience feels effortless.”
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-box">
+          <div>
+            <p class="section-tag">Contact</p>
+            <h2 class="editable" data-key="contactTitle">Let’s create something meaningful.</h2>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:hello@yourdomain.com" class="editable" data-key="contactEmail">hello@yourdomain.com</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="editable" data-key="contactLinkedIn">LinkedIn</a>
+            <a href="https://www.github.com" target="_blank" rel="noreferrer" class="editable" data-key="contactGitHub">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="editable" data-key="footerText">© 2026 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const defaultContent = {
+        brand: 'Your Name',
+        eyebrow: 'Creative Developer',
+        heroTitle: 'I design and build digital experiences.',
+        heroText: 'I’m a passionate designer and developer focused on creating clean, modern, user-friendly websites and products that help brands stand out.',
+        stat1Value: '3+',
+        stat1Label: 'Years Experience',
+        stat2Value: '12',
+        stat2Label: 'Projects Completed',
+        stat3Value: '5',
+        stat3Label: 'Happy Clients',
+        profileText: 'YN',
+        profileName: 'Your Name',
+        location: 'Your City',
+        email: 'hello@yourdomain.com',
+        focus: 'Web Design • Development',
+        aboutTitle: 'I build thoughtful digital experiences.',
+        aboutText: 'I help businesses and individuals turn ideas into polished websites and digital products. My work blends strategy, design, and development to create experiences that are visually appealing, easy to use, and built to grow with your goals.',
+        skillsTitle: 'Tools and strengths',
+        skill1: 'UI/UX Design',
+        skill2: 'Web Development',
+        skill3: 'Brand Strategy',
+        skill4: 'Responsive Design',
+        skill5: 'Content Design',
+        skill6: 'Project Planning',
+        projectsTitle: 'Selected work',
+        project1Visual: '01',
+        project1Title: 'Project One',
+        project1Text: 'A modern business website designed to improve brand visibility and drive more leads.',
+        project1Tag: 'Branding • Web Design',
+        project2Visual: '02',
+        project2Title: 'Project Two',
+        project2Text: 'A clean portfolio experience created to highlight services, achievements, and client work.',
+        project2Tag: 'Portfolio • UX',
+        project3Visual: '03',
+        project3Title: 'Project Three',
+        project3Text: 'A user-centered landing page focused on conversion, clarity, and strong visual storytelling.',
+        project3Tag: 'Landing Page • Strategy',
+        quoteText: '“Great work happens when design is clear, strategy is focused, and the user experience feels effortless.”',
+        contactTitle: 'Let’s create something meaningful.',
+        contactEmail: 'hello@yourdomain.com',
+        contactLinkedIn: 'LinkedIn',
+        contactGitHub: 'GitHub',
+        footerText: '© 2026 Your Name. All rights reserved.'
+      };
+
+      const storageKey = 'portfolio-template-content';
+      const editableElements = [...document.querySelectorAll('[data-key]')];
+      const toggleButton = document.getElementById('toggleEdit');
+      const resetButton = document.getElementById('resetData');
+
+      function applyContent(content) {
+        editableElements.forEach((element) => {
+          const key = element.dataset.key;
+          if (content[key] !== undefined) {
+            element.textContent = content[key];
+          }
+        });
+      }
+
+      function saveContent() {
+        const content = {};
+        editableElements.forEach((element) => {
+          content[element.dataset.key] = element.textContent.trim();
+        });
+        localStorage.setItem(storageKey, JSON.stringify(content));
+      }
+
+      function loadContent() {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            applyContent(parsed);
+            return;
+          } catch (error) {
+            console.error('Unable to load saved portfolio content:', error);
+          }
+        }
+        applyContent(defaultContent);
+      }
+
+      function setEditableMode(enabled) {
+        editableElements.forEach((element) => {
+          element.setAttribute('contenteditable', enabled ? 'true' : 'false');
+          element.classList.toggle('editing', enabled);
+        });
+        toggleButton.textContent = enabled ? 'Save Changes' : 'Edit Content';
+      }
+
+      let editMode = false;
+
+      toggleButton.addEventListener('click', () => {
+        editMode = !editMode;
+        setEditableMode(editMode);
+
+        if (!editMode) {
+          saveContent();
+        }
+      });
+
+      resetButton.addEventListener('click', () => {
+        localStorage.removeItem(storageKey);
+        applyContent(defaultContent);
+        editMode = false;
+        setEditableMode(false);
+      });
+
+      editableElements.forEach((element) => {
+        element.addEventListener('input', () => {
+          if (editMode) {
+            saveContent();
+          }
+        });
+      });
+
+      loadContent();
+      setEditableMode(false);
+    </script>
+  </body>
+</html>
